@@ -527,20 +527,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fazal\\.nuget\\packages\\": {}
+    "C:\\Users\\Fazal\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fazal\\Documents\\GitHub\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\eTickets.csproj",
+      "projectUniqueName": "D:\\csharp\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\eTickets.csproj",
       "projectName": "eTickets",
-      "projectPath": "C:\\Users\\fazal\\Documents\\GitHub\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\eTickets.csproj",
-      "packagesPath": "C:\\Users\\fazal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fazal\\Documents\\GitHub\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\obj\\",
+      "projectPath": "D:\\csharp\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\eTickets.csproj",
+      "packagesPath": "C:\\Users\\Fazal\\.nuget\\packages\\",
+      "outputPath": "D:\\csharp\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\fazal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Fazal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -588,7 +598,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
