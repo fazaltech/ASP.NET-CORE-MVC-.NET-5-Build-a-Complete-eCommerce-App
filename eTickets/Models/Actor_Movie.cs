@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace eTickets.Models
 {
+
     public class Actor_Movie
     {
         public int MovieId { get; set; }
@@ -12,9 +13,5 @@ namespace eTickets.Models
 
         public int ActorId { get; set; }
         public Actor Actor { get; set; }
-
-        //Relationships
-
-        public List<Actor_Movie> MyProperty { get; set; }
     }
 }
