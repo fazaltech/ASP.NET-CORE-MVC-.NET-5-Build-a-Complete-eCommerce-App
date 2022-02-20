@@ -70,3 +70,4 @@ D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\De
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\ref\eTickets.dll
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\eTickets.pdb
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\eTickets.genruntimeconfig.cache
+D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Actors\Index.cshtml.g.cs
