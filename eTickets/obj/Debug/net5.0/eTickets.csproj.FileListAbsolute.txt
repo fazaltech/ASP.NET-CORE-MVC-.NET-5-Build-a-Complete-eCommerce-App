@@ -55,8 +55,6 @@ D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\De
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\eTickets.TagHelpers.input.cache
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\eTickets.TagHelpers.output.cache
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\eTickets.RazorCoreGenerate.cache
-D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
