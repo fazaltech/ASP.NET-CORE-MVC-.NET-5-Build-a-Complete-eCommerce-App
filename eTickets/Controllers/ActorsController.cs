@@ -16,10 +16,11 @@ namespace eTickets.Controllers
         {
             _service = service;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var data = _service.GetAll();
+            var data = await _service.GetAll();
             return View(data);
         }
+
     }
 }
