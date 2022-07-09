@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace eTickets.Data.Services
 {
-    interface IActorsService
+   public interface IActorsService
     {
-        IEnumerable<Actor> GetAll();
+        Task<IEnumerable<Actor>> GetAll();
 
         Actor GetById(int id);
 
