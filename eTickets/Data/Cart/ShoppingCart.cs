@@ -14,19 +14,22 @@ namespace eTickets.Data.Cart
         public AppDbContext _context { get; set; }
 
         public string ShoppingCartId { get; set; }
-
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }
 
-        public static ShoppingCart GetShoppingCart(IServiceProvider services) 
+        public ShoppingCart(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public static ShoppingCart GetShoppingCart(IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
             var context = services.GetService<AppDbContext>();
 
-            string cartId = session.GetString("cartId") ?? Guid.NewGuid().ToString();
+            string cartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
             session.SetString("CartId", cartId);
 
             return new ShoppingCart(context) { ShoppingCartId = cartId };
-        
         }
 
         public void AddItemToCart(Movie movie)
@@ -40,8 +43,8 @@ namespace eTickets.Data.Cart
                     ShoppingCartId = ShoppingCartId,
                     Movie = movie,
                     Amount = 1
-
                 };
+
                 _context.ShoppingCartItems.Add(shoppingCartItem);
             }
             else
@@ -66,20 +69,23 @@ namespace eTickets.Data.Cart
                     _context.ShoppingCartItems.Remove(shoppingCartItem);
                 }
             }
-
             _context.SaveChanges();
-
-        }
-
-        public ShoppingCart(AppDbContext context)
-        {
-            _context = context;
         }
 
         public List<ShoppingCartItem> GetShoppingCartItems()
         {
-            return ShoppingCartItems ?? (ShoppingCartItems = _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Include(n => n.Movie).ToList());
+             return ShoppingCartItems ?? (ShoppingCartItems = _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Include(n => n.Movie).ToList());
+           // return ShoppingCartItems ?? (ShoppingCartItems = _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Include(n => n.Movie).ToList());
         }
+
         public double GetShoppingCartTotal() => _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Select(n => n.Movie.Price * n.Amount).Sum();
+       // public double GetShoppingCartTotal() => _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).Select(n => n.Movie.Price * n.Amount).Sum();
+
+        //public async Task ClearShoppingCartAsync()
+        //{
+        //    var items = await _context.ShoppingCartItems.Where(n => n.ShoppingCartId == ShoppingCartId).ToListAsync();
+        //    _context.ShoppingCartItems.RemoveRange(items);
+        //    await _context.SaveChangesAsync();
+        //}
     }
 }
