@@ -1,4 +1,5 @@
 ﻿using eTickets.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,34 @@ namespace eTickets.Data.Services
         {
             _context = context;
         }
-        public Task<List<Order>> GetOrdersByUserIdAsync(string userId)
+        public async Task<List<Order>> GetOrdersByUserIdAsync(string userId)
         {
-            throw new NotImplementedException();
+            var orders = await _context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Moive).Where(n => n.UserId == userId).ToListAsync();
+            return orders;
         }
 
-        public Task StoreOrderAsync(List<ShoppingCartItem> item, string userId, string userEmailAddress)
+        public async Task StoreOrderAsync(List<ShoppingCartItem> items, string userId, string userEmailAddress)
         {
-            throw new NotImplementedException();
+            var order = new Order()
+            {
+                UserId = userId,
+                Email = userEmailAddress
+            };
+            await _context.Orders.AddAsync(order);
+            await _context.SaveChangesAsync();
+
+            foreach (var item in items) 
+            {
+                var orderItem = new OrderItem()
+                {
+                    Amout=item.Amount,
+                    MovieId=item.Movie.Id,
+                    OrderId=order.Id,
+                    Price=item.Movie.Price
+                };
+                await _context.OrderItems.AddAsync(orderItem);
+            }
+            await _context.SaveChangesAsync(); 
         }
     }
 }
