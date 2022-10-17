@@ -53,7 +53,7 @@ namespace eTickets.Controllers
             }
             return RedirectToAction(nameof(ShoppingCart));
         }
-
+        //Ordering items without PayPal
         public async Task<IActionResult> CompleteOrder() 
         {
             var items = _shoppingCart.GetShoppingCartItems();
