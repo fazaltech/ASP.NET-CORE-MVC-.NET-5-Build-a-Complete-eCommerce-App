@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Bq58U9OnezQAh8NNyfi3gyyQdyOwbMXkBEh6Ifz7D04/2v9iz8E5sKFhEAKV3Fm66pdr8+ityHsOEgwl8B1Swg==",
+  "dgSpecHash": "+j6a9wTTfXVvcjd0YOzLNh9wABTZYvgoNAAQSOw1ZUTpo15Ld2fOyhhqkx5/58DLM4e4Iqb8Enpov6TSW9/+Hg==",
   "success": true,
   "projectFilePath": "D:\\csharp\\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\\eTickets\\eTickets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fazal\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.14\\microsoft.aspnetcore.cryptography.internal.5.0.14.nupkg.sha512",
+    "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.14\\microsoft.aspnetcore.cryptography.keyderivation.5.0.14.nupkg.sha512",
+    "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.14\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.14.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -20,6 +23,8 @@
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.14\\microsoft.extensions.identity.core.5.0.14.nupkg.sha512",
+    "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.14\\microsoft.extensions.identity.stores.5.0.14.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Fazal\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
