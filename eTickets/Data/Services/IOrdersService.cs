@@ -10,6 +10,6 @@ namespace eTickets.Data.Services
     {
         Task StoreOrderAsync(List<ShoppingCartItem> item, string userId, string userEmailAddress);
 
-        Task<List<Order>> GetOrdersByUserIdAsync(string userId);
+        Task<List<Order>> GetOrdersByUserAndRoleIdAsync(string userId, string userRole);
     }
 }
