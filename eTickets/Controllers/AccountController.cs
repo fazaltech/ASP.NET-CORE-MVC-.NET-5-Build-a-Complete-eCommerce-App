@@ -49,6 +49,8 @@ namespace eTickets.Controllers
 
         }
 
+        public IActionResult Register() => View(new RegisterVM());
+
 
     }
 }
