@@ -100,3 +100,4 @@ D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\bin\De
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\csharp\ASP.NET-CORE-MVC-.NET-5-Build-a-Complete-eCommerce-App\eTickets\obj\Debug\net5.0\Razor\Views\Account\RegisterCompleted.cshtml.g.cs
