@@ -1,6 +1,7 @@
 ﻿using eTickets.Data.Cart;
 using eTickets.Data.Services;
 using eTickets.Data.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace eTickets.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly IMoviesService _moviesService;
@@ -21,7 +23,7 @@ namespace eTickets.Controllers
             _shoppingCart = shoppingCart;
             _ordersService = ordersService;
         }
-
+     
         public async Task<IActionResult> Index() 
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
