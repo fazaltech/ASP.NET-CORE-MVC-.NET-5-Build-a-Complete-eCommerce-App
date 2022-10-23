@@ -56,7 +56,12 @@ namespace eTickets
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             });
 
-    
+
+            //services.ConfigureApplicationCookie(options =>
+            //{
+            //    options.ReturnUrlParameter = new PathString("/Account/AccessDenied");
+            //});
+
 
 
             services.AddControllersWithViews();
