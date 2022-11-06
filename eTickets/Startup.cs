@@ -59,7 +59,7 @@ namespace eTickets
 
             //services.ConfigureApplicationCookie(options =>
             //{
-            //    options.ReturnUrlParameter = new PathString("/Account/AccessDenied");
+            //    options.AccessDeniedPath = new PathString("/Account/AccessDenied");
             //});
 
 
